@@ -90,6 +90,34 @@ The FastAPI backend is integrated into the Tauri application using the following
 
 This approach allows for a self-contained application that includes both the frontend and backend, simplifying distribution and deployment.
 
+## Building for Production
+
+### Windows
+
+For detailed instructions on building a complete bundled Windows application, see:
+
+- **[BUILD_WINDOWS.md](BUILD_WINDOWS.md)** - Comprehensive build guide with troubleshooting
+- **[QUICK_START.md](QUICK_START.md)** - Quick reference for experienced developers
+
+#### Quick Build
+
+Use the automated build script:
+
+**Bash (Git Bash/WSL):**
+```bash
+./build-windows.sh
+```
+
+**PowerShell:**
+```powershell
+.\build-windows.ps1
+```
+
+The installer will be created at:
+```
+src-tauri/target/release/bundle/nsis/my-tauri-app_0.1.0_x64-setup.exe
+```
+
 ## TODO and Future Improvements
 
 Here are some planned enhancements for this template:
